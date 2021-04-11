@@ -22,7 +22,9 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
+DROP DATABASE IF EXISTS `myvent`;
+CREATE DATABASE `myvent`;
+USE `myvent`;
 --
 -- Table structure for table `event`
 --
