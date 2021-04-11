@@ -204,8 +204,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`userID`, `email`, `name`, `password`, `active`) VALUES
-(1, 'justinA@gmail.com', 'Justin A', 'pass', 1),
-(2, 'rosmith@gmail.com', 'Rob SM', 'pss', 1);
+(1, 'justinA@gmail.com', 'Justin A', 'password', 1),
+(2, 'rosmith@gmail.com', 'Rob SM', 'psswrd', 1);
 
 --
 -- Constraints for dumped tables
