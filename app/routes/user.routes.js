@@ -2,7 +2,7 @@ module.exports = app => {
   const users = require("../controllers/user.controller.js");
 
   // Create a new User
-  app.post("/users", users.create);
+  app.post("/users/register", users.create);
 
   // Retrieve all Users
   app.get("/users", users.findAll);
@@ -19,3 +19,4 @@ module.exports = app => {
   // Create a new User
   app.delete("/users", users.deleteAll);
 };
+
