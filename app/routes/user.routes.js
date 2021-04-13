@@ -18,5 +18,7 @@ module.exports = app => {
 
   // Create a new User
   app.delete("/users", users.deleteAll);
+
+  app.post("/users/authenticate", users.authenticate);
 };
 

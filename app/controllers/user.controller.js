@@ -138,3 +138,7 @@ exports.deleteAll = (req, res) => {
     else res.send({ message: `All Users were deleted successfully!` });
   });
 };
+
+exports.authenticate = (req, res) => {
+  res.send({ message: `welcome!`});
+};
