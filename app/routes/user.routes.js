@@ -8,17 +8,18 @@ module.exports = app => {
   app.get("/users", users.findAll);
 
   // Retrieve a single User with userId
-  app.get("/users/:userId", users.findOne);
+ // app.get("/users/:userId", users.findOne);
 
   // Update a User with userId
-  app.put("/users/:userId", users.update);
+  //app.put("/users/:userId", users.update);
 
   // Delete a User with userId
-  app.delete("/users/:userId", users.delete);
+  //app.delete("/users/:userId", users.delete);
 
   // Create a new User
   app.delete("/users", users.deleteAll);
 
+ //KAK
   app.post("/users/authenticate", users.authenticate);
 };
 

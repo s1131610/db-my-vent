@@ -140,5 +140,10 @@ exports.deleteAll = (req, res) => {
 };
 
 exports.authenticate = (req, res) => {
-  res.send({ message: `welcome!`});
+ //KAK
+ console.log("KAK - authenticate")
+  res.send({ id: 1,
+    email: "justinA@gmail.com",
+    role: "EventManager",
+    token: 1});
 };
