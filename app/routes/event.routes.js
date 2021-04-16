@@ -8,7 +8,7 @@ module.exports = app => {
     app.get("/events", events.findAll);
   
     // Retrieve a single Event with eventId
-    app.get("/events/:eventId", events.findEvent);
+    app.get("/events/get/:eventId", events.findEvent);
     
     // Update a Event with eventId
     app.put("/events/:eventId", events.update);
