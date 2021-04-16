@@ -42,7 +42,7 @@ Event.findById = (eventId, result) => {
 
 
 Event.getAll = result => {
-  sql.query("SELECT * FROM event", (err, res) => {
+  sql.query("SELECT *, eventID AS id from event", (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
