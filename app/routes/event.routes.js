@@ -11,12 +11,12 @@ module.exports = app => {
     app.get("/events/get/:eventId", events.findEvent);
     
     // Update a Event with eventId
-    app.put("/events/:eventId", events.update);
+    app.post("/events/update/:eventId", events.update);
   
     // Delete a Event with eventId
-    app.delete("/events/:eventId", events.delete);
+    app.delete("/events/delete/:eventId", events.delete);
   
-    // Create a new Event
+    // Delete all Events
     app.delete("/events", events.deleteAll);
   };
   

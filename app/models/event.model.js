@@ -56,8 +56,8 @@ Event.getAll = result => {
 
 Event.updateById = (id, event, result) => {
   sql.query(
-    "UPDATE event SET email = ?, name = ?, password = ? WHERE id = ?",
-    [event.name, event.date, event.eventMgrID, id],
+    "UPDATE event SET eventName = ?, eventDate = ? WHERE eventID = ?",
+    [event.eventName, event.eventDate, id],
     (err, res) => {
       if (err) {
         console.log("error: ", err);
