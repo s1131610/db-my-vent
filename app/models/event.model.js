@@ -78,7 +78,7 @@ Event.updateById = (id, event, result) => {
 };
 
 Event.remove = (id, result) => {
-  sql.query("DELETE FROM event WHERE id = ?", id, (err, res) => {
+  sql.query("DELETE FROM event WHERE eventID = ?", id, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
